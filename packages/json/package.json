@@ -1,0 +1,43 @@
+{
+  "name": "@luban/json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/*.d.ts",
+    "lib/*.js"
+  ],
+  "directories": {
+    "lib": "lib/"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^23.3.1",
+    "coveralls": "^3.0.2",
+    "jest": "^23.5.0",
+    "rimraf": "^2.6.2",
+    "ts-jest": "^23.1.4",
+    "typescript": "^3.0.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "coveralls": "cat ./test/coverage/lcov.info | coveralls",
+    "pretest": "rimraf ./test/coverage",
+    "clean": "rimraf lib && rimraf ./test/coverage"
+  },
+  "author": {
+    "name": "bubkoo",
+    "email": "bubkoo.wy@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bubkoo/luban/tree/master/packages/json"
+  },
+  "homepage": "https://github.com/bubkoo/luban/tree/master/packages/json",
+  "bugs": {
+    "url": "https://github.com/bubkoo/luban/issues"
+  }
+}
